@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eduardo.android.rodadadazoeira.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Champions League"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:textSize="32sp"
+            android:layout_gravity="center"
+            android:id="@+id/text_resultado" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image_barcelona"
+            android:src="@drawable/barcelona"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/image_real_madrid"
+            android:src="@drawable/real_madrid"
+            android:layout_alignBottom="@+id/image_barcelona"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barcelona"
+            android:textSize="22sp"
+            android:id="@+id/text_barcelona"
+            android:layout_below="@+id/image_barcelona"
+            android:layout_alignRight="@+id/image_barcelona"
+            android:layout_alignEnd="@+id/image_barcelona"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real Madrid"
+            android:textSize="22sp"
+            android:id="@+id/text_real_madrid"
+            android:layout_below="@+id/image_real_madrid"
+            android:layout_alignRight="@+id/image_real_madrid"
+            android:layout_alignEnd="@+id/image_real_madrid"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:textSize="50sp"
+            android:id="@+id/text_placar_barcelona"
+            android:layout_below="@+id/text_barcelona"
+            android:layout_alignLeft="@+id/text_barcelona"
+            android:layout_marginLeft="35dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:textSize="50sp"
+            android:id="@+id/text_placar_real"
+            android:layout_below="@+id/text_real_madrid"
+            android:layout_alignRight="@+id/text_real_madrid"
+            android:layout_marginRight="40dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Marcar Gol"
+            android:textColor="#FFF"
+            android:background="#4781dc"
+            android:id="@+id/btn_gol_barcelona"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Marcar Gol"
+            android:textColor="#FFF"
+            android:id="@+id/btn_gol_real"
+            android:clickable="true"
+            android:background="#4781dc"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Limpar Placar"
+        android:textColor="#FFF"
+        android:background="#4781dc"
+        android:id="@+id/btn_limpar_placar"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+         />
+    </LinearLayout>
+
+</LinearLayout>
